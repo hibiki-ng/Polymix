@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(24,24,24,1);
+    color: rgba(255,255,255,1);
+}
+
+#navbar {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 5vh;
+}
+
+#navbar div {
+    transition: 0.3s;
+}
+
+#navbar div:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#navbar img {
+    width: 15vw;
+}

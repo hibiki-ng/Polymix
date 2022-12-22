@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Polymix Studios{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/home.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+
+<div class="index">
+    <div id="description">
+        <h2>Polymix Studios est un studio français produisant du contenu divertissant</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus deserunt officiis optio assumenda nisi nihil possimus libero voluptatum doloremque dignissimos natus, modi, ducimus, porro provident! Dolore quae dolor nostrum expedita?
+    </div>
+    <div id="video">
+        <iframe width="840" height="472.5" src="https://www.youtube.com/embed/2tamT9TPYXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+{% endblock %}
