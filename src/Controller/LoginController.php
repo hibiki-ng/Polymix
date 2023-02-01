@@ -17,7 +17,7 @@ class LoginController extends AbstractController
     #[Route('/login', name: 'app_login')]
     public function index(Request $request): Response
     {
-        $form = $this->createFormBuilder()
+        /*$form = $this->createFormBuilder()
         ->add('name', TextType::class, [
             'attr' => [
                 'placeholder' => 'Nom',
@@ -45,11 +45,11 @@ class LoginController extends AbstractController
         ])
         ->getForm();
 
-        $form->handleRequest($request);
+        $form->handleRequest($request);*/
 
         return $this->render('login/index.html.twig', [
             'controller_name' => 'LoginController',
-            'form' => $form->createView(),
+            //'form' => $form->createView(),
         ]);
     }
 }

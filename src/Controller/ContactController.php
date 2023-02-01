@@ -62,15 +62,13 @@ class ContactController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
             $email = (new Email())
-            ->from('contact@hibiki.tech')
-            ->to('contact@hibiki.tech')
+            ->from($data['email'])
+            ->to('polymixstudios@gmail.com')
             ->subject($data['subject'])
-            ->html('<p><strong>Email: </strong>'.$data['email'].'<br><strong>Message: </strong>'.$data['message'].'</p>');
+            ->html('<p><strong>Email: </strong>'.$data['email'].'<br><strong>Message: </stong>'.$data['message'].'</p>');
 
             $mailer->send($email);  
         }
-
-        dump($form);
 
         return $this->render('contact/index.html.twig', [
             'controller_name' => 'ContactController',
