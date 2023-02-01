@@ -4,7 +4,6 @@
 
 #description {
     width: 45vw;
-    background-color: aqua;
 }
 
 #description h2 {
@@ -18,5 +17,4 @@
     display: flex;
     justify-content: center;
     width: 55vw;
-    background-color: red;
 }

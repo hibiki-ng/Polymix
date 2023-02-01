@@ -1,0 +1,61 @@
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 60% !important;
+}
+
+.container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 3vh;
+    font-weight: 700;
+}
+
+.container .form {
+     margin-left: 3vw;
+}
+
+.form form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.1rem;
+}
+
+form div input,
+form div textarea {
+    width: 40%;
+    background-color: transparent;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+form div input:hover, form div input:focus,
+form div textarea:hover, form div textarea:focus {
+    border-bottom: 2px solid white;
+    transition: 0.2s;
+    outline: none;
+}
+
+form div label {
+    margin-bottom: 1vh;
+}
+
+form div button {
+    width: 20%;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+form div button:hover {
+    background-color: #cccccc;
+    color: black;
+    border: 1px solid #cccccc;
+    transition: 0.3s;
+}

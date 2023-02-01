@@ -1,10 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjetsController!{% endblock %}
+{% block title %}Projets à venir{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('./css/projets.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('./css/base.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
 
 {% block body %}
 
-<div class="example-wrapper">
-    <h1>AAAAAAAAAAAAAAAAAAAAA</h1>
+<div class="main">
+    <div class="container">
+        <h1>Projets à venir</h1>
+    </div>
 </div>
 {% endblock %}

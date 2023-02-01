@@ -27,3 +27,13 @@ body {
 #navbar img {
     width: 15vw;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 60% !important;
+}
